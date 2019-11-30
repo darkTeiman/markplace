@@ -28,6 +28,7 @@ background-color: $bg;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   &-inner{
     margin-left: 23px;
   }
@@ -102,7 +103,52 @@ background-color: $bg;
     cursor: pointer;
  }
 }
-
+.header__box{
+  max-width: 555px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__box-link{
+  position: relative;
+}
+.notification{
+  
+  &::before{
+    content:"\e858";
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    font-family: 'Linearicons-Free';
+  }
+}
+.email{
+  margin-left: 30px;
+ &::before {
+   content: "\e818";
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 25px;
+   font-family: 'Linearicons-Free';
+ }
+}
+.cart{
+ 
+ &::before { 
+   content: "\e82e";
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 75px;
+   font-family: 'Linearicons-Free';
+ }
+}
 
 //end header
 
@@ -368,6 +414,7 @@ background-color: $bg;
     padding-top: 20px;
     &-btn{
       display: inline-block;
+      margin-right: 20px;
       a{
         background-color: $btn;
         color:#fff;
@@ -375,6 +422,34 @@ background-color: $bg;
         font-weight: 500;
         border-radius: 25px;
         padding: 0px 18px;
+      }
+    }
+    &-like{
+      padding-left: 25px;
+      position: relative;
+      &::before{
+        content:"\e813";
+        color:#7347c1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        font-family: 'Linearicons-Free';
+      }
+    }
+    &-cart{
+      margin-left: 20px;
+      padding-left: 20px;
+      color:$btn;
+      position: relative;
+      &::before{
+        content:"\e82e";
+        color:$btn;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        font-family: 'Linearicons-Free';
       }
     }
     
