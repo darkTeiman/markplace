@@ -909,15 +909,9 @@
 .advantages {
   padding: 115px 0px;
 
- 
 
-  &__subtitle {
-    max-width: 670px;
-    margin: 0 auto 40px;
-    text-align: center;
-    font-size: 16px;
-    color: $text;
-  }
+
+
 
   &__inner {
     display: flex;
@@ -1025,117 +1019,216 @@
 
 //end start
 //start shop
-.shop{
-  &__inner{
+.shop {
+  &__inner {
     display: flex;
     justify-content: space-between;
   }
-  &__items{
+
+  &__items {
     padding: 100px 0px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     max-width: 960px;
     width: 100%;
   }
-  &__item{
+
+  &__item {
     text-align: center;
-    &-title{
+
+    &-title {
       margin-top: 40px;
       font-size: 36px;
-      color:#fff;
+      color: #fff;
     }
-    &-text{
+
+    &-text {
       max-width: 600px;
       width: 100%;
       margin: 30px auto 40px;
       font-size: 16px;
-      color:#fff;
+      color: #fff;
     }
-    &-btn{
-      a{
-      background-color: #fff;
-      border-radius:25px;
-      padding: 10px 25px;
-      color:$btn;
-    }
+
+    &-btn {
+      a {
+        background-color: #fff;
+        border-radius: 25px;
+        padding: 10px 25px;
+        color: $btn;
+      }
     }
   }
 }
-.color-btn{
-  a{
-  color:#7347c1;
+
+.color-btn {
+  a {
+    color: #7347c1;
+  }
 }
-}
+
 //end shop
 //start rewiews
 
-.rewiews{
+.rewiews {
   padding: 120px 0px;
-  &__inner{
+
+  &__inner {
     display: flex;
     justify-content: space-between;
-    
+
   }
-  &__item{
+
+  &__item {
     padding: 50px 40px;
     max-width: 556px;
     width: 100%;
-    border-left:3px solid #0674ec;
+    border-left: 3px solid #0674ec;
     position: relative;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+
     &-author {
       display: flex;
       align-items: center;
-      span{
+
+      span {
         display: block;
       }
     }
-    &-text{
+
+    &-text {
       margin-top: 30px;
     }
   }
-  &__bubble{
+
+  &__bubble {
     position: absolute;
     top: 60px;
     right: 45px;
-    &::before{
+
+    &::before {
       content: "\e83f";
       font-family: 'Linearicons-Free';
       font-size: 60px;
-      color:#e8e8e8;
+      color: #e8e8e8;
     }
   }
-  &__btn{
+
+  &__btn {
     margin-top: 60px;
     text-align: center;
-    a{
+
+    a {
       background-color: $btn;
-      color:#fff;
+      color: #fff;
       font-size: 15px;
       padding: 10px 20px;
       border-radius: 25px;
-      
-      
+
+
     }
   }
 }
 
-.author__img{
+.author__images {
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   width: 80px;
   height: 80px;
 }
-.author__link{
+
+.author__link {
   margin-left: 20px;
   padding-top: 10px;
   font-size: 20px;
-  color:#000;
-  span{
+  color: #000;
+
+  span {
     font-size: 16px;
-    color:$text;
+    color: $text;
   }
 }
+
 //end rewiews
+
+//start news
+.news {
+  padding: 120px 0px;
+  background-color: $slider-bg;
+&__inner{
+  display: flex;
+  justify-content: space-between;
+}
+  &__wrapper {
+    padding: 30px;
+  }
+
+  &__item {
+    max-width: 363px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+
+    &-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 360px;
+      width: 100%;
+      height: 230px;
+    }
+
+    &-title {
+      font-size: 22px;
+      font-weight: 500;
+      color: #000;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ececec;
+    padding: 10px 30px;
+&-view{
+  border-left: 1px solid #ececec;
+  padding-left: 35px;
+}
+    &-date {
+      color: #999;
+
+      &::before {
+        content: "\e864";
+        font-family: 'Linearicons-Free';
+        color: $btn;
+      }
+    }
+
+    &-bubble {
+      color: #999;
+
+      &::before {
+        content: "\e83f";
+        font-family: 'Linearicons-Free';
+        padding-right: 8px;
+
+      }
+    }
+
+    &-glass {
+      color: #999;
+margin-left: 20px;
+
+      &::before {
+        content: "\e81b";
+        font-family: 'Linearicons-Free';
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+
+//end news
