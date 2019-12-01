@@ -1157,10 +1157,12 @@
 .news {
   padding: 120px 0px;
   background-color: $slider-bg;
-&__inner{
-  display: flex;
-  justify-content: space-between;
-}
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__wrapper {
     padding: 30px;
   }
@@ -1192,10 +1194,12 @@
     justify-content: space-between;
     border-top: 1px solid #ececec;
     padding: 10px 30px;
-&-view{
-  border-left: 1px solid #ececec;
-  padding-left: 35px;
-}
+
+    &-view {
+      border-left: 1px solid #ececec;
+      padding-left: 35px;
+    }
+
     &-date {
       color: #999;
 
@@ -1219,7 +1223,7 @@
 
     &-glass {
       color: #999;
-margin-left: 20px;
+      margin-left: 20px;
 
       &::before {
         content: "\e81b";
@@ -1234,35 +1238,77 @@ margin-left: 20px;
 //end news
 //start content
 
-.content{
+.content {
 
-  
-  &__inner{
+
+  &__inner {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
   }
-  &__item{
+
+  &__item {
     text-align: center;
     width: 50%;
     padding: 60px 0px;
-    &-title{
+
+    &-title {
       margin-top: 30px;
       font-size: 24px;
-      color:#000;
-      span{
-        color:#0674ec;
+      color: #000;
+
+      span {
+        color: #0674ec;
       }
     }
   }
 }
+
 .content__item-title.title__color {
-  span{
-  color:#7347c1;
+  span {
+    color: #7347c1;
+  }
 }
-}
-.content__item.bg-line{
+
+.content__item.bg-line {
   border-left: 1px solid #ececec;
 }
+
 //end content
+
+//start join
+
+.join {
+  padding: 110px 0px;
+  background-image: linear-gradient(to left, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+  background-image: linear-gradient(to left, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+  background-image: linear-gradient(to left, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+
+  &__item {
+    text-align: center;
+    color: #fff;
+
+    &-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    &-subtitle {
+      font-size: 18px;
+    }
+
+    &-btn {
+      margin-top: 50px;
+
+      a {
+        background-color: #fff;
+        color: #0674ec;
+        padding: 13px 40px;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+//end join
