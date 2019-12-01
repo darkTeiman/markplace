@@ -1232,3 +1232,37 @@ margin-left: 20px;
 
 
 //end news
+//start content
+
+.content{
+
+  
+  &__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &__item{
+    text-align: center;
+    width: 50%;
+    padding: 60px 0px;
+    &-title{
+      margin-top: 30px;
+      font-size: 24px;
+      color:#000;
+      span{
+        color:#0674ec;
+      }
+    }
+  }
+}
+.content__item-title.title__color {
+  span{
+  color:#7347c1;
+}
+}
+.content__item.bg-line{
+  border-left: 1px solid #ececec;
+}
+//end content
