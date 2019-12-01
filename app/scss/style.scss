@@ -909,16 +909,7 @@
 .advantages {
   padding: 115px 0px;
 
-  &__title {
-    font-size: 36px;
-    color: #000;
-    text-align: center;
-    margin-bottom: 30px;
-
-    span {
-      color: $btn;
-    }
-  }
+ 
 
   &__subtitle {
     max-width: 670px;
@@ -1077,3 +1068,74 @@
 }
 }
 //end shop
+//start rewiews
+
+.rewiews{
+  padding: 120px 0px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__item{
+    padding: 50px 40px;
+    max-width: 556px;
+    width: 100%;
+    border-left:3px solid #0674ec;
+    position: relative;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    &-author {
+      display: flex;
+      align-items: center;
+      span{
+        display: block;
+      }
+    }
+    &-text{
+      margin-top: 30px;
+    }
+  }
+  &__bubble{
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    &::before{
+      content: "\e83f";
+      font-family: 'Linearicons-Free';
+      font-size: 60px;
+      color:#e8e8e8;
+    }
+  }
+  &__btn{
+    margin-top: 60px;
+    text-align: center;
+    a{
+      background-color: $btn;
+      color:#fff;
+      font-size: 15px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      
+      
+    }
+  }
+}
+
+.author__img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 80px;
+  height: 80px;
+}
+.author__link{
+  margin-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  color:#000;
+  span{
+    font-size: 16px;
+    color:$text;
+  }
+}
+//end rewiews
