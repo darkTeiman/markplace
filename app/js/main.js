@@ -13,6 +13,7 @@ $(function () {
    arrows:false,
     
   });
+
    $(".followers__inner").slick({
      arrows: false,
      slidesToShow: 3,
