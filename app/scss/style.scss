@@ -1652,6 +1652,7 @@
 
 .form-group {
   display: flex;
+  align-items: center;
 }
 
 .filter__box {
@@ -1672,24 +1673,28 @@
 }
 
 .filter__btn {
-  padding: 10px 20px;
+  width: 96px;
+  height: 42px;
   border: 1px solid #eceff2;
   display: flex;
   align-items: center;
   margin-left: 30px;
+  padding: 10px 10px;
 
   button {
-    width: 20px;
-    height: 20px;
     border: none;
     cursor: pointer;
     background-color: transparent;
+    outline: none;
+
 
     &+button {
       margin-left: 15px;
     }
+
   }
 }
+
 
 //end page-filter
 
@@ -1761,7 +1766,7 @@
   }
 }
 
-.filter__list {
+.filter__aside-box {
   padding-top: 20px;
 
   li {
@@ -1921,33 +1926,37 @@
 
 .pagination {
   margin-top: 55px;
-  float:right;
+  display: flex;
+  justify-content: flex-end;
+
   li {
     display: inline-block;
 
     &+li {
       margin-left: 5px;
     }
- 
-    a ,
-    span{
+
+    a,
+    span {
       font-size: 16px;
       font-weight: 500;
       color: #747b86;
       background-color: #fff;
       padding: 5px 20px;
-      border-radius:20px;
+      border-radius: 20px;
+
       &.active {
         background-color: $btn;
         color: #fff;
       }
 
     }
-    span{
-       padding: 10px 22px;
-       
+
+    span {
+      padding: 10px 22px;
+
     }
-   
+
   }
 }
 
@@ -1955,18 +1964,91 @@
   display: flex;
   align-items: center;
 }
+
 .pagination__link-left,
 .pagination__link-right {
-   font-size: 16px;
-   font-weight: 500;
-   color: #747b86;
-   background-color: #fff;
-   padding: 12px 20px;
-   border-radius:20px;
-   margin-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #747b86;
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+  &:hover{
+    background-color: #7347c1;
+    color:#fff;
+  }
 }
-.pagination__link-right{
+
+.pagination__link-right {
   margin-right: 0;
   margin-left: 30px;
 }
+
 //end product-page
+
+//start page-favorites
+.favorites-filter {
+  padding:  0px;
+  .filter__box 
+  form 
+  select{
+    &+select{
+      margin-left: 70px;
+    }
+  }
+  .filter__by form select{
+    margin-right: 30px;
+  }
+}
+
+.page-favorites {
+  text-align: left;
+  padding: 55px 0px 60px;
+}
+
+.favorites-breadcrumbs {
+  .breadcrumbs__inner {
+    padding: 0;
+    margin-bottom: 23px;
+  }
+  
+
+}
+
+.favorites__text {
+  margin-top: 23px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+}
+
+.filter__title {
+  font-size: 24px;
+  line-height: 70px;
+  color: #000;
+
+  span {
+    font-weight: 500;
+  }
+
+ 
+}
+ .filter__by {
+   form {
+     select {
+       font-size: 14px;
+       color: #747b86;
+       border: 1px solid #eceff2;
+       border-radius: 5px;
+       padding: 39px 20px;
+       height: 100%;
+     }
+   }
+ }
+ .favorites__pagination{
+  justify-content: center;
+   
+ }
+//end page-favorites
