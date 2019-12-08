@@ -1,7 +1,7 @@
 $(function () {
 
   $(".rate-star").rateYo({
-    rating: 4,
+    rating: 4.5,
     starWidth: "15px",
     ratedFill: "#ffc000",
     readOnly: true
@@ -20,7 +20,19 @@ $(function () {
     slidesToScroll: 3
 
    });
+
+   $(".js-range-slider").ionRangeSlider({
+       type: "double",
+         grid: true,
+         min: 0,
+         max: 400,
+         from: 30,
+         to: 300,
+         prefix: "$"
+   });
+
   var mixer = mixitup('.products__inner-box');
+
   $('.arrows-left').on('click', function () {
       $('.slider__inner').slick('slickPrev');
     });

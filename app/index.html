@@ -13,6 +13,8 @@
 </head>
 
 <body>
+  <div class="wrapper">
+    <div class="content">
   <header class="header">
     <div class="header__top">
       <div class="container">
@@ -29,10 +31,18 @@
               </a>
             </div>
             <div class="header__box-link">
-              <a href="#" class="notification"></a>
-              <a href="#" class="email"></a>
-              <a href="#" class="cart"></a>
+              <div class="notification__box">
+              <a href="#" class="notification header__circle lnr-alarm"><span>25</span></a>
             </div>
+
+            <div class="massage__box">
+              <a href="#" class="massage header__circle lnr-envelope "><span>6</span></a>
+              </div>
+              <div class="basket__box">
+              
+              <a href="#" class="basket header__circle lnr-cart "><span>2</span></a>
+            </div>
+          </div>
             <div class="header__info">
 
               <a href="#" class="avatar">
@@ -1402,23 +1412,23 @@
     </div>
   </section>
 
-  <section class="content">
+  <section class="support">
     <div class="container">
-      <div class="content__inner">
-        <div class="content__item">
-          <div class="content__item-img">
+      <div class="support__inner">
+        <div class="support__item">
+          <div class="support__item-img">
             <img src="images/content/content-item1.png" alt="">
           </div>
-          <div class="content__item-title">
+          <div class="support__item-title">
             30 Days Money Back
             <span>Guarantee</span>
           </div>
         </div>
-        <div class="content__item bg-line">
-          <div class="content__item-img">
+        <div class="support__item bg-line">
+          <div class="support__item-img">
             <img src="images/content/content-item2.png" alt="">
           </div>
-          <div class="content__item-title title__color">
+          <div class="support__item-title title__color">
             Fast and Friendly
             <span>Support</span>
           </div>
@@ -1445,7 +1455,7 @@
       </div>
     </div>
   </section>
-
+</div>
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -1535,6 +1545,7 @@
       ©2017 <span>MartPlace</span> . All rights reserved. Created by AazzTech
     </div>
   </footer>
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
