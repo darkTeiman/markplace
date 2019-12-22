@@ -31,7 +31,7 @@ $(function () {
     prefix: "$"
   });
 
-  var mixer = mixitup('.products__inner-box');
+  
 
   $('.arrows-left').on('click', function () {
     $('.slider__inner').slick('slickPrev');
@@ -47,11 +47,15 @@ $(function () {
   });
 
 
-  // $('').on('click', function () {
-  //  console.log('Hello');
-  //   // $('.product__item').addClass('list');
-  //   // $('.icon-th-list').addClass('active');
-  //   // $('.icon-th-large').removeClass('active');
-  // });
-
+  $('.filter__list').on('click', function () {
+     $('.products__item').addClass('list');
+     $('.filter__list').addClass('active');
+    $('.filter__grid').removeClass('active');
+  });
+  $('.filter__grid').on('click', function () {
+    $('.products__item').removeClass('list');
+    $('.filter__grid').addClass('active');
+    $('.filter__list').removeClass('active');
+  });
+var mixer = mixitup('.products__inner-box');
 });
